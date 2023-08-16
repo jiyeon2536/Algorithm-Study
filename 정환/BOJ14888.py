@@ -73,4 +73,3 @@ elif len(stack_oper) == 1:
     elif stack_oper[0] == '/':
         print(arr[0] // arr[1])
         print(arr[0] // arr[1])
-
