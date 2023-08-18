@@ -14,7 +14,7 @@ def perm(i, n):
                 sum_v *= num[idx+1]
             elif opers[idx] == '/': # 음수를 양수로 나누는 경우
                 if sum_v < 0:
-                    sum_v = (-sum_v // num[idx+1])
+                    sum_v = -(-sum_v // num[idx+1])
                 else:
                     sum_v //= num[idx+1]
         mx = max(mx, sum_v)
