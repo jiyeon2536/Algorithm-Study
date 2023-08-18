@@ -1,3 +1,5 @@
+# 14888 연산자 끼워넣기
+
 N = int(input())  # 숫자 개수
 nums = list(map(int, input().split()))  # 수식에 사용되는 숫자
 oper1 = list(map(int, input().split()))  # + - * / 개수 -> ex) 2 0 1 0
