@@ -3,6 +3,7 @@ def rec(idx, res):
     global mx
 
     if idx == N:
+        # 결과가 최소 또는 최대일 경우...
         if mn > res:
             mn = res
 
@@ -12,7 +13,9 @@ def rec(idx, res):
         return
 
     for i in range(4):
+        # '+', '-', '*', '/'이 각각 0 이상 존재하면...
         if operations[i] > 0:
+            # 다음 숫자와 연산의 모든 조합을 순회... 
             if i == 0:
                 operations[i] -= 1
                 rec(idx + 1, res + numbers[idx])
@@ -30,6 +33,7 @@ def rec(idx, res):
 
             if i == 3:
                 operations[i] -= 1
+                # res가 양수일 경우와 음수일 경우의 연산과정이 다름
                 if res >= 0:
                     rec(idx + 1, res // numbers[idx])
                 else:
@@ -46,6 +50,7 @@ cur_sum = numbers[0]
 mn = 1000000000
 mx = -1000000000
 
+# 모든 경우의 수 구하기 시작
 rec(1, cur_sum)
 
 print(mx)
