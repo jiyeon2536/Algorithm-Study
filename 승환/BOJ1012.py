@@ -17,9 +17,9 @@ def bfs(x, y):  # bfs로 풀면 시간 초과 발생함??!
     arr[x][y] = 0
     dx = [0, 0, 1, -1]
     dy = [1, -1, 0, 0]
-    q.append((x, y))
+    q.append((x, y))  # append에서 시간이 많이 걸린다.
     while q:
-        x, y = q.pop(0)
+        x, y = q.pop(0)  # pop에서도 시간이 걸린다.
         arr[x][y] = 0
         for k in range(4):
             nx = x + dx[k]
