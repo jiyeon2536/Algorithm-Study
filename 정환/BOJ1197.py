@@ -22,7 +22,7 @@ def union(x, y):
             parents[px] = py
 
 
-def kruskal(start):
+def kruskal():
     cnt = 0
     res = 0
     for a, b, c in arr:
@@ -45,4 +45,4 @@ arr.sort(key=lambda x: x[2])
 
 parents = [i for i in range(V + 1)]
 
-print(kruskal(1))
+print(kruskal())
