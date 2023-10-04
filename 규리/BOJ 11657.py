@@ -9,7 +9,7 @@ for _ in range(M):
     graph[A].append((B, C))
 
 arr = []
-time = [float('inf')] * (N+1)
+time = [float('inf')] * (N+1)  # 최소시간
 
 def bellman_ford(graph, start):
     for a in range(N+1):
@@ -19,6 +19,7 @@ def bellman_ford(graph, start):
     time[start] = 0
 
     for _ in range(N-1):
+        # 최소값 갱신
         for a, b, c in arr:
             new_time = time[a] + c
             if time[b] > new_time:
@@ -30,7 +31,7 @@ result = bellman_ford(graph, start)
 
 check = True
 for a, b, c in arr:
-    if time[b] > time[a] + c:
+    if time[b] > time[a] + c:  # 존재하면 음수 사이클 존재
         check = False
         break
 if check == False:
