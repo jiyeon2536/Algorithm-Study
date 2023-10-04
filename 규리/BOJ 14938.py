@@ -27,13 +27,14 @@ def dijkstra(graph, start):
     return dist
 
 mx = 0
+# 낙하지점 찾기
 for start in range(1, n+1):
     result = 0
     arr = dijkstra(graph, start)
 
     for i in range(1, n+1):
-        if arr[i] <= m:
+        if arr[i] <= m:  # 수색범위 안에 드는지
             result += item[i]
-    mx = max(result, mx)
+    mx = max(result, mx)  # 최대값 갱신
 
 print(mx)
