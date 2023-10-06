@@ -11,7 +11,7 @@ while start <= end:
     mid = (start + end) // 2
     idx, cnt = 0, 1  # 공유기 설치한 위치 인덱스, 공유기 설치 개수
     for i in range(1, N):
-        # 앞에 설치한 위치와 현재 위치 사이의 거리가 mid 간격 이상이면 설치 & 설치 위치 인덱스 바꿔줌
+        # 앞에 설치한 위치와 현재 위치 사이의 거리가 mid 간격 이상이면 설치, 인덱스(설치 위치) 바꿔줌
         if x[i] - x[idx] >= mid:
             cnt += 1
             idx = i
