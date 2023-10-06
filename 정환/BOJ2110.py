@@ -18,7 +18,6 @@ def binary(s, e):
         else:
             e = mid - 1
 
-
 N, C = map(int, input().split())
 
 arr = sorted([int(input()) for _ in range(N)])
