@@ -8,9 +8,9 @@ SSAFY 알고리즘 스터디
 
 ##  🤖 Members
 
-|[![JnSia](https://avatars.githubusercontent.com/u/108898787?v=4)](https://github.com/JnSia)|[![rigoood](https://avatars.githubusercontent.com/u/132658372?v=4)](https://github.com/rigoood)|[![Nam4o](https://avatars.githubusercontent.com/u/128338647?v=4)](https://github.com/Nam4o)|[![YUNA-AHN](https://avatars.githubusercontent.com/u/130244216?v=4)](https://github.com/YUNA-AHN)|[![malrangcow00](https://avatars.githubusercontent.com/u/115908997?v=4)](https://github.com/malrangcow00)|[![seunghwan99](https://avatars.githubusercontent.com/u/139419039?v=4)](https://github.com/seunghwan99)|
-|:-:|:-:|:-:|:-:|:-:|:-:|
-|[김준수](https://github.com/JnSia)|[박규리](https://github.com/rigoood)|[박정환](https://github.com/Nam4o)|[안유나](https://github.com/YUNA-AHN)|[이재평](https://github.com/malrangcow00)|[임승환](https://github.com/Lim-seunghwan99)|
+|[![dreamingbeom](https://avatars.githubusercontent.com/u/128280944?v=4)](https://github.com/dreamingbeom)|[![JnSia](https://avatars.githubusercontent.com/u/108898787?v=4)](https://github.com/JnSia)|[![rigoood](https://avatars.githubusercontent.com/u/132658372?v=4)](https://github.com/rigoood)|[![Nam4o](https://avatars.githubusercontent.com/u/128338647?v=4)](https://github.com/Nam4o)|[![YUNA-AHN](https://avatars.githubusercontent.com/u/130244216?v=4)](https://github.com/YUNA-AHN)|[![malrangcow00](https://avatars.githubusercontent.com/u/115908997?v=4)](https://github.com/malrangcow00)|[![seunghwan99](https://avatars.githubusercontent.com/u/139419039?v=4)](https://github.com/seunghwan99)|
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+|[김경범](https://github.com/dreamingbeom)|[김준수](https://github.com/JnSia)|[박규리](https://github.com/rigoood)|[박정환](https://github.com/Nam4o)|[안유나](https://github.com/YUNA-AHN)|[이재평](https://github.com/malrangcow00)|[임승환](https://github.com/Lim-seunghwan99)|
 
 ##  📌 Study Rule
 - 매일 한 문제 필수
