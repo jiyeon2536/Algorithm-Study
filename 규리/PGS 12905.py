@@ -17,12 +17,11 @@ def solution(board):
 def solution(board):
     N, M = len(board), len(board[0])
     MN = min(N, M)
-    answer = 1
+    answer = 0
     arr = set()
-    total_cnt = 0
 
     def find(x, y, mn):
-        nonlocal answer, arr, total_cnt
+        nonlocal answer, arr
         cnt = 0
 
         for i in range(x, x + mn):
@@ -30,7 +29,6 @@ def solution(board):
                 if board[i][j] == 1:
                     cnt += 1
 
-        total_cnt += cnt
         if cnt == mn ** 2:
             answer = max(answer, cnt)
         else:
@@ -46,8 +44,5 @@ def solution(board):
             if i + MN <= N and j + MN <= M and (i, j, MN) not in arr:
                 arr.add((i, j, MN))
                 find(i, j, MN)
-
-    if total_cnt == 0:
-        answer = 0
 
     return answer
