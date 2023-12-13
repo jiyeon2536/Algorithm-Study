@@ -20,4 +20,4 @@ dfs(1)
 ans = sum(visited) - 1 # 감염시킨 컴퓨터 중 자기 자신 제외
 
 print(ans)
-
+ 
