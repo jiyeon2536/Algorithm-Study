@@ -1,4 +1,6 @@
 import heapq
+
+# 다익스트라 활용
 def bfs(start_node, distance, graph, K):
     h = []
     heapq.heappush(h,(0,start_node))
