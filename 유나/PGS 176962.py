@@ -3,6 +3,7 @@ def solution(plans):
     answer = []
     # 시간순으로 정렬
     plans.sort(key=lambda x:x[1])
+    print(plans)
     n = len(plans) # 계획의 수
     now = plans[0][1] # 현재 시간
     stack = deque() # 미뤄둔 일
@@ -16,6 +17,8 @@ def solution(plans):
         d_min = times % 60
         
         # 한 자릿수인 경우 보정
+        if d_hour < 10:
+            d_hour = '0' + str(d_hour)
         if d_min < 10:
             d_min = '0' + str(d_min)
             
@@ -34,9 +37,10 @@ def solution(plans):
                     # 남는 시간이 남은 시간보다 크다면 가능
                     if later_able >= later_time:
                         later_able -= later_time
-                        answer.appendleft(later)
-                    # 남는 시간이 부족하면 그냥 다시 집어 넣기
+                        answer.append(later)
+                    # 남는 시간이 부족하면 남는 시간만큼 빼주고 다시 넣기
                     else:
+                        later_time -= later_able
                         stack.append((later, later_time))
                         break
                     if later_able == 0:
