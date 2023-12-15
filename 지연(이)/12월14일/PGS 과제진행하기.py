@@ -38,9 +38,6 @@ def solution(plans):
             # print('while end')
             # print(f'now time : {now_time}')
 
-    # 내가 힘든 이유, 내가 했는게 맞는지 확신할 수 없음
-    # 어느 곳에서 어떤 값이 나오는지 모르겠음
-
     answer.append(plans[-1][0])
     while stack:
         answer.append(stack.pop()[0])
