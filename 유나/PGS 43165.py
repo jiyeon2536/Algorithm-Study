@@ -18,3 +18,4 @@ def solution(numbers, target):
             que.append((sum_v + numbers[count], count + 1))
             que.append((sum_v - numbers[count], count + 1))
     return answer
+ 
