@@ -1,6 +1,4 @@
-from itertools import permutations
-def solution(name):
-    answer = 0
+
 
 # 오른쪽으로 이동하는게 좋을지
 # JJJJAAA
@@ -28,7 +26,8 @@ def solution(name):
 # 근데 왔던 곳으로 안가는게 더 좋을거임
 # alphabet char list / index int list
 
-
+from itertools import permutations
+def solution(name):
     index = []
     for i in range(len(name)):
         if name[i]!='A':
@@ -57,15 +56,13 @@ def solution(name):
                     cnt+=(nxt+len(name)-now)
             now = nxt
         move_cnt = min(move_cnt, cnt)
-                
-            
 
-
+    alpha_cnt = 0
     for alpha in name:
         if alpha=="A":
             continue
         elif ord(alpha)-ord('A')<ord('Z')-ord(alpha)+1:
-            answer += ord(alpha)-ord('A')
+            alpha_cnt += ord(alpha)-ord('A')
         else:
-            answer += ord('Z')-ord(alpha)+1
-    return answer+move_cnt
+            alpha_cnt += ord('Z')-ord(alpha)+1
+    return alpha_cnt + move_cnt
