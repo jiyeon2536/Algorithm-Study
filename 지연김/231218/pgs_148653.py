@@ -1,3 +1,4 @@
+# 마법의 엘리베이터
 from collections import deque 
 
 def solution(storey):
