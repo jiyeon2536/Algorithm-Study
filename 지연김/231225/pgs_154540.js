@@ -1,3 +1,4 @@
+// 무인도 여행
 function solution(maps) {
   var answer = [];
 
