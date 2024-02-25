@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// 숫자가 크면 이분탐색을 시도해볼 것.
+
 long long solution(int n, vector<int> times) {
     long long answer = 1e10; // max
 
